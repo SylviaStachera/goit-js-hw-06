@@ -12,3 +12,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+//1. Stworzyć li>img
+//2. W img dodać atrybuy url i alt z images
+
+const galeryList = document.querySelector(".gallery");
+
+const galeryItem = images
+.map((el => `<li><img class="gallery--item" src="${el.url}" alt=${el.alt}"></li>`))
+.join("");
+
+galeryList.insertAdjacentHTML("beforeend", galeryItem);
+
+//console.log(galeryList);
+//3.Ostylować galerię 
