@@ -13,7 +13,7 @@ const createBoxes = amount => {
 	//tworzę pusty arry aby dodać tam divy, każdy z divów będzie wyglądał tak jak w pętli for w zależności od i
 	const boxToAdd = []
 
-	for (let i = 0; i <= amount; i++) {
+	for (let i = 0; i < amount; i++) {
 		const divItem = document.createElement('div')
 		divItem.style.height = `${30 + 10 * i}px`
 		divItem.style.width = `${30 + 10 * i}px`
