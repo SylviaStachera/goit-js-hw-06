@@ -25,12 +25,13 @@ button {
 
 .gallery{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   
 }
 
 .gallery--item{
+  scale: 0.9;
   height: 300px;
 }
