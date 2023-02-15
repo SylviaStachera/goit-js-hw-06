@@ -33,8 +33,12 @@ const destroyBoxes = () => {
 //Zadarzenia na przyciskach
 buttonCreate.addEventListener('click', () => {
 	let countBoxes = createBoxes(inputNumber.value)
-
 	containerBoxes.append(...countBoxes)
+	if (containerBoxes.children !== []) {
+		containerBoxes.innerHTML = ''
+		containerBoxes.append(...countBoxes)
+	}
+	//console.log(containerBoxes.children);
 })
 
 buttonDestroy.addEventListener('click', destroyBoxes)
