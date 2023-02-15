@@ -31,7 +31,7 @@ function eventSubmit(event) {
 
 	//Ad5.
 	//Informacja w wierszu poleceń
-	console.log(`E-mail: ${email.value}, Password: ${password.vaue}`)
+	console.log(`E-mail: ${email.value}, Password: ${password.value}`)
 	//Rsest pul formularza
 	event.currentTarget.reset()
 }
